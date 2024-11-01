@@ -50,6 +50,7 @@ def create_openai_llm(prompt_template):
             {"role": "user", "content": prompt}
         ],
         temperature=0.01,
+        frequency_penalty = 1.5,
         )
 
         return extract_json(completion.choices[0].message.content)

@@ -56,7 +56,7 @@ def process_file(filename):
         f.write(j_str)            
 
 if __name__ == "__main__":
-    files = glob("./genma2_9b/*.pdf")
+    files = glob("./mistral_0.2_7B/*.pdf")
     for i, f in enumerate(files):
         output_name = f.replace(".pdf",".txt")
         
